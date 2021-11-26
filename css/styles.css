@@ -683,22 +683,24 @@ ul {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 500ms, visibility 500ms;
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
   width: 528px;
   min-height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition: transform 1000ms;
 }
 
-.close-modal {
+.modal-close {
   position: absolute;
   top: 0;
   right: 0;
@@ -717,4 +719,6 @@ ul {
 }
 
 .backdrop.is-hidden .modal {
+  transform: scale(2) rotate(180deg) translate(100%);
+  transition: transform 500ms;
 }
