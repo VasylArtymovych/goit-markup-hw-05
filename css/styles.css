@@ -415,7 +415,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
@@ -563,7 +563,7 @@ ul {
 .portfolio-btn-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .portfolio-btn-item:not(:last-child) {
